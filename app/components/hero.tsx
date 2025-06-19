@@ -2,6 +2,7 @@ import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
+  TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 
 export function Hero() {
@@ -40,6 +41,9 @@ export function Hero() {
         </a>
         <a href="https://linkedin.com/in/hartmandy" className="h-8 w-8">
           <LinkedInLogoIcon className="h-full w-full text-neutral-700 transition-all duration-1000 hover:duration-100 ease-in-out hover:text-sky-600" />
+        </a>
+        <a href="https://x.com/hartmandyyy" className="h-8 w-8">
+          <TwitterLogoIcon className="h-full w-full text-neutral-700 transition-all duration-1000 hover:duration-100 ease-in-out hover:text-sky-600" />
         </a>
         <a href="mailto:mandyhartmandev@gmail.com" className="h-8 w-8">
           <EnvelopeClosedIcon className="h-full w-full text-neutral-700 transition-all duration-1000 hover:duration-100 ease-in-out hover:text-sky-400" />
