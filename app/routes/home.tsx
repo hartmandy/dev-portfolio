@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
       <WorkSection />
       <ProjectsSection />
-      <OtherProjectsSection />
+      {/* <OtherProjectsSection /> */}
       <ContactSection />
     </div>
   );

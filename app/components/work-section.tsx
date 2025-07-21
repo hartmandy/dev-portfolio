@@ -8,35 +8,47 @@ interface WorkItem {
   period: string;
   image: string;
   link?: string;
+  linkText?: string; // Custom text for the link button (defaults to "View Project")
   github?: string;
 }
 
 const workItems: WorkItem[] = [
   {
-    title: "Mobile Trading Platform",
+    title: "Sports Card Price Guide & Browser",
     company: "Sports Card Investor",
-    description: "Built responsive mobile-first trading interface with real-time market data and portfolio management. Led design and development.",
-    technologies: ["React Native", "TypeScript", "WebSocket", "Redux"],
-    period: "2023 - Present",
-    image: "/example.jpg",
+    description:
+      "Mobile app tracking 5 million sports cards across 11+ marketplaces, helping collectors discover trends and make smarter investments.",
+    technologies: ["React Native", "TypeScript", "UI UX Design", "Firebase"],
+    period: "2025 - Present",
+    image: "/SCI.png",
+    link: "https://apps.apple.com/no/app/sports-card-investor/id1533690124",
   },
   {
-    title: "E-commerce Dashboard",
-    company: "Previous Company",
-    description: "Developed admin dashboard with analytics, inventory management, and real-time order tracking.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Chart.js"],
-    period: "2022 - 2023",
-    image: "/example.jpg",
+    title: "Card Investment Portfolio Tracker",
+    company: "Market Movers",
+    description:
+      "Web and mobile collection management app for 5+ million sports and trading cards with real-time pricing, portfolio tracking, and AI-powered deal discovery across multiple categories.",
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "UI UX Design",
+      "Next JS",
+      "Tailwind CSS",
+    ],
+    period: "2025 - Present",
+    image: "/MM.png",
+    link: "https://apps.apple.com/no/app/market-movers/id1561027917",
   },
   {
-    title: "Customer Portal",
-    company: "Another Company", 
-    description: "Created customer-facing portal with account management, billing, and support ticket system.",
-    technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
-    period: "2021 - 2022",
-    image: "/example.jpg",
+    title: "Digital Archive Site for WNC History",
+    company: "Black Mountain College Yearbook",
+    description:
+      "Digital archive preserving the legacy of Black Mountain College (1933-1957), democratizing access to stories of students, staff, and artists from this experimental art institution through an interactive yearbook platform.",
+    technologies: ["Remix", "Sanity CMS", "Typescript", "Tailwind CSS"],
+    period: "2022 - 2024",
+    image: "/BMC.png",
+    link: "https://bmcyearbook.org/",
   },
-  // Add your actual work items here
 ];
 
 export function WorkSection() {
@@ -45,13 +57,13 @@ export function WorkSection() {
       <h2 className="text-2xl md:text-4xl font-bold mb-12 text-neutral-800 dark:text-neutral-200 text-right">
         Professional Work
       </h2>
-      
+
       <div className="space-y-8">
         {workItems.map((item, index) => (
           <div
             key={index}
             className={`group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-gray-900 transition-all duration-500 hover:shadow-xl hover:scale-[1.01] hover:border-sky-300 dark:hover:border-sky-600 ${
-              index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             } flex flex-col lg:flex`}
           >
             {/* Image Section */}
@@ -64,9 +76,8 @@ export function WorkSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              
             </div>
-            
+
             {/* Content Section */}
             <div className="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
               <div className="mb-6">
@@ -80,7 +91,7 @@ export function WorkSection() {
                   {item.description}
                 </p>
               </div>
-              
+
               <div className="flex flex-wrap gap-2 mb-8">
                 {item.technologies.map((tech, techIndex) => (
                   <span
@@ -91,7 +102,7 @@ export function WorkSection() {
                   </span>
                 ))}
               </div>
-              
+
               <div className="flex gap-4">
                 {item.link && (
                   <a
@@ -99,7 +110,7 @@ export function WorkSection() {
                     className="flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-lg font-medium transition-all duration-200 hover:scale-105"
                   >
                     <ExternalLinkIcon className="h-4 w-4" />
-                    View Project
+                    {item.linkText || "View Project"}
                   </a>
                 )}
                 {item.github && (
@@ -113,7 +124,7 @@ export function WorkSection() {
                 )}
               </div>
             </div>
-            
+
             {/* Subtle animated background gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-sky-50/50 via-transparent to-blue-50/50 dark:from-sky-950/10 dark:to-blue-950/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
           </div>
