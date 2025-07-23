@@ -26,32 +26,51 @@ const projects: Project[] = [
     featured: true,
     image: "/pet.png",
   },
-  // {
-  //   title: "Recipe Finder",
-  //   description:
-  //     "Smart recipe discovery app with dietary filters, meal planning, and grocery list generation.",
-  //   technologies: ["Vue.js", "Node.js", "MongoDB", "Spoonacular API"],
-  //   github: "https://github.com/hartmandy/recipe-finder",
-  //   demo: "https://recipe-finder-app.vercel.app",
-  //   image: "/example.jpg",
-  // },
-  // {
-  //   title: "Code Snippet Manager",
-  //   description:
-  //     "Developer tool for organizing, searching, and sharing code snippets with syntax highlighting and tagging.",
-  //   technologies: ["React", "Express.js", "PostgreSQL", "Prism.js"],
-  //   github: "https://github.com/hartmandy/snippet-manager",
-  //   image: "/example.jpg",
-  // },
-  // {
-  //   title: "Habit Tracker",
-  //   description:
-  //     "Minimalist habit tracking app with streak counters, progress visualization, and motivational insights.",
-  //   technologies: ["React Native", "Firebase", "Chart.js", "Expo"],
-  //   github: "https://github.com/hartmandy/habit-tracker",
-  //   image: "/example.jpg",
-  // },
-  // Add your actual projects here
+  {
+    title: "VS Code Extension - Time Tracker (Coming soon!)",
+    description:
+      "VS Code extension for tracking time spent on projects and tasks, with detailed reports and analytics to help you stay on top of your work and appropriately bill your clients.",
+    technologies: ["Node.js", "SQLite", "TypeScript"],
+    image: "/extension.png",
+  },
+  {
+    title: "AI Course Planning Assistant",
+    description:
+      "AI-powered chatbot helping students select courses and build semester schedules using OpenAI's API with intelligent prompt engineering for educational guidance.",
+    technologies: ["Remix", "Prisma", "MySQL"],
+    github: "https://github.com/hartmandy/edu-dashboard",
+    image: "/edu-dashboard.png",
+  },
+  {
+    title: "Emergency Vet Patient Management",
+    description:
+      "Patient intake system for emergency veterinary clinics featuring real-time care tracking, medical history management, and role-based interfaces for ER staff and receptionists.",
+    technologies: ["React", "PostgreSQL", "Node.js"],
+    github: "https://github.com/hartmandy/cat-cache",
+    image: "/cat-cache.png",
+  },
+  {
+    title: "Interactive Location Data Visualizer",
+    description:
+      "CSV-powered mapping platform enabling users to upload, visualize, and filter location data with interactive maps and analytics charts for data-driven insights.",
+    technologies: ["Remix", "Mapbox", "Prisma"],
+    image: "/map-visualizer.png",
+  },
+  {
+    title: "Animal Shelter Website Template",
+    description:
+      "Free, customizable website template for animal shelters featuring Petfinder integration, adoption listings, volunteer recruitment, and donation management for WNC organizations.",
+    technologies: ["Remix", "Petfinder API", "TypeScript"],
+    image: "/animal-shelter.png",
+  },
+  {
+    title: "AnimalShelter CMS",
+    description:
+      "Custom CMS for animal shelters to manage adoptable pet listings directly on their websites, eliminating dependency on external platforms with real-time updates and SEO optimization.",
+    technologies: ["Remix", "Sanity CMS", "TypeScript"],
+    github: "https://github.com/hartmandy/paw-profile",
+    image: "/pet-cms.png",
+  },
 ];
 
 export function ProjectsSection() {
@@ -111,7 +130,7 @@ export function ProjectsSection() {
                     {project.github && (
                       <a
                         href={project.github}
-                        className="flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-xl font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 hover:scale-105"
+                        className="flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-xl font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 hover:scale-105 cursor-default"
                       >
                         <GitHubLogoIcon className="h-5 w-5" />
                         View Code
@@ -120,7 +139,7 @@ export function ProjectsSection() {
                     {project.demo && (
                       <a
                         href={project.demo}
-                        className="flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-xl font-medium transition-all duration-200 hover:scale-105"
+                        className="flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-xl font-medium transition-all duration-200 hover:scale-105 cursor-default"
                       >
                         <ExternalLinkIcon className="h-5 w-5" />
                         {project.demoText || "Live Demo"}
@@ -181,7 +200,7 @@ export function ProjectsSection() {
                   {project.github && (
                     <a
                       href={project.github}
-                      className="flex items-center gap-1.5 px-4 py-2 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg text-sm font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 hover:scale-105"
+                      className="flex items-center gap-1.5 px-4 py-2 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg text-sm font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 hover:scale-105 cursor-default"
                     >
                       <GitHubLogoIcon className="h-4 w-4" />
                       Code
@@ -190,7 +209,7 @@ export function ProjectsSection() {
                   {project.demo && (
                     <a
                       href={project.demo}
-                      className="flex items-center gap-1.5 px-4 py-2 border border-sky-300 dark:border-sky-600 text-sky-700 dark:text-sky-400 rounded-lg text-sm font-medium hover:bg-sky-50 dark:hover:bg-sky-950/30 transition-all duration-200 hover:scale-105"
+                      className="flex items-center gap-1.5 px-4 py-2 border border-sky-300 dark:border-sky-600 text-sky-700 dark:text-sky-400 rounded-lg text-sm font-medium hover:bg-sky-50 dark:hover:bg-sky-950/30 transition-all duration-200 hover:scale-105 cursor-default"
                     >
                       <ExternalLinkIcon className="h-4 w-4" />
                       {project.demoText || "Demo"}

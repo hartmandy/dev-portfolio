@@ -40,6 +40,16 @@ const workItems: WorkItem[] = [
     link: "https://apps.apple.com/no/app/market-movers/id1561027917",
   },
   {
+    title: "Full-Stack Development Studio",
+    company: "Virtu Studios",
+    description:
+      "Digital agency building custom websites, web applications, and mobile apps for clients while developing consumer-facing products that solve real-world problems.",
+    technologies: ["Remix", "React", "React Native", "TypeScript", "Node.js"],
+    period: "2022 - Present",
+    image: "/virtu.png",
+    link: "https://virtu-studios.com/",
+  },
+  {
     title: "Digital Archive Site for WNC History",
     company: "Black Mountain College Yearbook",
     description:
@@ -48,6 +58,16 @@ const workItems: WorkItem[] = [
     period: "2022 - 2024",
     image: "/BMC.png",
     link: "https://bmcyearbook.org/",
+  },
+  {
+    title: "AI-Powered Student Support Chatbot",
+    company: "Jenzabar",
+    description:
+      "Built AI-driven chatbot enabling 24/7 student self-service across any SIS, featuring real-time satisfaction tracking and responsive interfaces that reduced staff workload on routine inquiries.",
+    technologies: ["React", "Remix", "Azure DevOps", "TypeScript"],
+    period: "2023 - 2024",
+    image: "/jenzabar.png",
+    link: "https://jenzabar.com/product/chatbot",
   },
 ];
 
