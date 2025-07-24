@@ -27,13 +27,6 @@ const projects: Project[] = [
     image: "/pet.png",
   },
   {
-    title: "VS Code Extension - Time Tracker (Coming soon!)",
-    description:
-      "VS Code extension for tracking time spent on projects and tasks, with detailed reports and analytics to help you stay on top of your work and appropriately bill your clients.",
-    technologies: ["Node.js", "SQLite", "TypeScript"],
-    image: "/extension.png",
-  },
-  {
     title: "AI Course Planning Assistant",
     description:
       "AI-powered chatbot helping students select courses and build semester schedules using OpenAI's API with intelligent prompt engineering for educational guidance.",

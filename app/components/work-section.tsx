@@ -8,7 +8,7 @@ interface WorkItem {
   period: string;
   image: string;
   link?: string;
-  linkText?: string; // Custom text for the link button (defaults to "View Project")
+  linkText?: string;
   github?: string;
 }
 
@@ -23,32 +23,16 @@ const workItems: WorkItem[] = [
     image: "/SCI.png",
     link: "https://apps.apple.com/no/app/sports-card-investor/id1533690124",
   },
-  {
-    title: "Card Investment Portfolio Tracker",
-    company: "Market Movers",
-    description:
-      "Web and mobile collection management app for 5+ million sports and trading cards with real-time pricing, portfolio tracking, and AI-powered deal discovery across multiple categories.",
-    technologies: [
-      "React Native",
-      "TypeScript",
-      "UI UX Design",
-      "Next JS",
-      "Tailwind CSS",
-    ],
-    period: "2025 - Present",
-    image: "/MM.png",
-    link: "https://apps.apple.com/no/app/market-movers/id1561027917",
-  },
-  {
-    title: "Full-Stack Development Studio",
-    company: "Virtu Studios",
-    description:
-      "Digital agency building custom websites, web applications, and mobile apps for clients while developing consumer-facing products that solve real-world problems.",
-    technologies: ["Remix", "React", "React Native", "TypeScript", "Node.js"],
-    period: "2022 - Present",
-    image: "/virtu.png",
-    link: "https://virtu-studios.com/",
-  },
+  // {
+  //   title: "Full-Stack Development Studio",
+  //   company: "Virtu Studios",
+  //   description:
+  //     "Digital agency building custom websites, web applications, and mobile apps for clients while developing consumer-facing products that solve real-world problems.",
+  //   technologies: ["Remix", "React", "React Native", "TypeScript", "Node.js"],
+  //   period: "2022 - Present",
+  //   image: "/virtu.png",
+  //   link: "https://virtu-studios.com/",
+  // },
   {
     title: "Digital Archive Site for WNC History",
     company: "Black Mountain College Yearbook",
